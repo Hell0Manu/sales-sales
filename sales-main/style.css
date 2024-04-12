@@ -118,6 +118,7 @@ nav {
     box-shadow: rgba(24, 24, 24, 0.08) 0px 12px 24px -4px, rgba(24, 24, 24, 0.16) 0px 16px 32px -4px;
     top: 60.8px;
     left: 327.625px;
+    margin-top: 12px;
 }
 
 .dropdown-menu a{
@@ -150,8 +151,8 @@ nav {
     position: absolute;
     height: 8px;
     width: 8px;
-    border-top: 2px solid black;
-    border-left: 2px solid black;
+    border-top: 2px solid #032d60;
+    border-left: 2px solid #032d60;
     transform: rotate(223deg) ;
 }
 
@@ -170,21 +171,48 @@ nav {
 }
 
 
-.popup {
-    position: absolute;
-}
 
 .icon-arraw-popup {
     position: absolute;
     height: 8px;
     width: 8px;
-    border-top: 2px solid white;
-    border-left: 2px solid white;
+    border-top: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
     transform: rotate(45deg) ;
     margin-top: 7px;
-    margin-left: 8px;
+    margin-left:20px;
     margin-right: 8px;
-    border: 1px solid rgba(24, 24, 24, 0.04);
-    box-shadow: rgba(24, 24, 24, 0.08) 0px 12px 24px -4px, rgba(24, 24, 24, 0.16) 0px 16px 32px -4px;
-
 }
+
+.margin-menu {
+    margin-top: 12px;
+}
+
+
+.arrow-mobile {
+    display: none;
+    margin-bottom: 5px;
+}
+
+.icon-arraw-mobile {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-top: 2px solid #032d60;
+    border-left: 2px solid #032d60;
+    transform: rotate(223deg) ;
+}
+
+@media screen and (max-width: 1280px) {
+    .navbar-nav {
+      display: none;
+    }
+
+    .button-watch-trial {
+        display: none;
+    }
+
+    .arrow-mobile {
+        display: block;
+    }
+  }
