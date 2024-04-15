@@ -60,7 +60,12 @@ nav {
 }
 
  .navbar-nav>li {
-    padding: 8px 16px 8px 16px;
+    padding: 12px 16px 12px 16px;
+}
+
+.mobile-menu .navar-nav{
+    position: absolute;
+    width: 163px;
 }
 
 
@@ -70,7 +75,7 @@ nav {
     font-weight: 700;
     border: solid #0176d3;
     border-radius: 4px;
-    padding: 8px 24px;
+    padding: 12px 24px;
     background-color: #0176d3;
     cursor: pointer;
     white-space: nowrap;
@@ -145,6 +150,7 @@ nav {
 
 .dropdown-menu-mobile {
     display: none;
+   
 }
 .dropdown-menu.ativo{
     opacity: 1;
@@ -208,19 +214,6 @@ nav {
     border-color: #0176d3;
 }
 
-/*
-.icon-arraw-popup {
-    position: absolute;
-    height: 8px;
-    width: 8px;
-    border-top: 1px solid #e5e5e5;
-    border-left: 1px solid #e5e5e5;
-    transform: rotate(45deg) ;
-    margin-top: 7px;
-    margin-left:20px;
-    margin-right: 8px;
-}
-*/
 .arrow-space
 {
     position: absolute;
@@ -248,7 +241,6 @@ nav {
     height: 12px;
     background: transparent;
     transform: rotate(45deg);
-   
     border: 2px solid rgba(24, 24, 24, 0.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
 }
@@ -269,8 +261,8 @@ nav {
     position: absolute;
     height: 10px;
     width: 10px;
-    border-top: 3px solid #032d60;
-    border-left: 3px solid #032d60;
+    border-top: 2px solid #032d60;
+    border-left: 2px solid #032d60;
     transform: rotate(223deg);
     cursor: pointer;
 
@@ -283,6 +275,7 @@ nav {
     top: 100%;
     left: 0;
     width: 100%;
+    max-height: 398px;
     background-color: white;
     z-index: 999;
 }
@@ -294,6 +287,24 @@ nav {
 
 .title-navbar-nav {
     padding: 8px 0 8px 0;
+}
+
+
+.button-watch-trial-mobile {
+
+    padding: 24px 32px 12px 32px;
+}
+
+
+.button-watch-trial-mobile {
+
+    padding: 24px 24px 32px 24px;
+}
+
+
+.button-watch-trial-mobile .watch-demos
+{
+    width: 100%;
 }
 
 @media screen and (max-width: 1280px) {
@@ -325,7 +336,7 @@ nav {
 
     .mobile-menu .button-watch-trial {
         display: block;
-        padding: 1rem 2rem;
+        padding: 1.5rem 2rem 1rem 2rem ;
     }
 
     .mobile-menu .button-watch-trial button {
