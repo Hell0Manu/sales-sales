@@ -10,13 +10,20 @@
     <header class="div-global-sales">
         <nav class="nav-sales">
             <div class="nav-container-sales">
+
                 <div class="nav-sales-header-logo">
+
                     <a class="header-logo-container" href="/br/products/sales/" target="_self" data-tracking-type="context-logo" tabindex="-1">
+
+                        <div class="img-sales-mobile">
+                            <img class="property-logo" src="https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-no-type-logo.svg" alt="Salesforce Logo">
+                        </div>
+
                         <span class="property-title">Vendas</span>
                     </a>
                 </div>
+
                 <ul class="navbar-nav">
-                    <li><a href="#">Visão geral</a></li>
                     <li><a href="#">Visão geral</a></li>
                     <li class="dropdown">
                         <a class="produtos" href="#"> Produtos de vendas <div class="icon"><span class="icon-arraw"></span></div></a>
@@ -25,17 +32,17 @@
                             <div class="dropdown-menu">
                             <div class="dropdown-left">
                                 <a href="#">Sales Forces Automation</a>
-                                <a href="#">Sales Engagement</a>
-                                <a href="#">Sales Team Productivity</a>
-                                <a href="#">Enablement</a>
-                                <a href="#">IA de vendas</a>
+                                <a class= "nav-item" href="#">Sales Engagement</a>
+                                <a class= "nav-item" href="#">Sales Team Productivity</a>
+                                <a class= "nav-item" href="#">Enablement</a>
+                                <a class= "nav-item" href="#">IA de vendas</a>
                             </div>
                             <div class="dropdown-right">
                                 <a href="#">Sales Analytics</a>
-                                <a href="#">Partner Relationship Management</a>
-                                <a href="#">Revenue Optimization</a>
-                                <a href="#">Gestão de desempenho</a>
-                                <a href="#">Todos os produtos de vendas</a>
+                                <a class= "nav-item" href="#">Partner Relationship Management</a>
+                                <a class= "nav-item" href="#">Revenue Optimization</a>
+                                <a class= "nav-item" href="#">Gestão de desempenho</a>
+                                <a class= "nav-item" href="#">Todos os produtos de vendas</a>
                             </div>
                         </div>
                     </li>
@@ -47,7 +54,47 @@
                     <button class="watch-demos">Assista ás demos</button>
                 </a>
             </div>
+            <div class="arrow-mobile">
+                <button onclick="menuShow()"><span class="icon-arraw-mobile"> </span></button>
+            </div>
         </nav>
+
+        <div class="mobile-menu">
+            <ul class="navbar-nav">
+               <li><a href="#">Visão geral</a></li>
+               <li class="dropdown">
+                   <a class="produtos" href="#"> Produtos de vendas <div class="icon"><span class="icon-arraw"></span></div></a>
+                       <div class="popup"><span class="icon-arraw-popup"> </span></div>
+
+                       <div class="dropdown-menu">
+                       <div class="dropdown-left">
+                           <a href="#">Sales Forces Automation</a>
+                           <a class= "nav-item" href="#">Sales Engagement</a>
+                           <a class= "nav-item" href="#">Sales Team Productivity</a>
+                           <a class= "nav-item" href="#">Enablement</a>
+                           <a class= "nav-item" href="#">IA de vendas</a>
+                       </div>
+                       <div class="dropdown-right">
+                           <a href="#">Sales Analytics</a>
+                           <a class= "nav-item" href="#">Partner Relationship Management</a>
+                           <a class= "nav-item" href="#">Revenue Optimization</a>
+                           <a class= "nav-item" href="#">Gestão de desempenho</a>
+                           <a class= "nav-item" href="#">Todos os produtos de vendas</a>
+                       </div>
+                   </div>
+               </li>
+               <li><a href="#">Preços</a></li>
+           </ul>
+
+           <div class="button-watch-trial">
+                <a class="link-trial" href="/br/form/sales-cloud/overview-demo/?d=pb"  aria-label="Assista às demos: Sales Cloud">
+                    <button class="watch-demos">Assista ás demos</button>
+                </a>
+            </div>
+       </div>
+
     </header>
+    <main></main>
+    <script src="script.js"></script>
 </body>
 </html>

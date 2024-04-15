@@ -5,6 +5,9 @@
     line-height: 1.5;
     font-family:  'Salesforce Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';   
 }
+body{
+    background-color: red;
+}
 
 a {
     text-decoration: none;
@@ -89,8 +92,22 @@ nav {
 }
 
 .nav-sales-header-logo{
-    width: 86.888px;
+    display: flex;
+    align-items: center;
+    width: auto;
     height: 32px;
+}
+
+.img-sales-mobile {
+    display: none;
+    width: 45px;
+    height: 31.3px;
+    padding-right: 16px;
+}
+
+.header-logo-container {
+    display: flex;
+    align-items: center;
 }
 
 .property-title {
@@ -106,9 +123,11 @@ nav {
 
 /*Menu clicavel*/
 .dropdown-menu{
+    display: flex;
     position: absolute;
     background-color: white;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     width: 592px;
     height: 247.200px;
     padding: 24px;
@@ -118,6 +137,12 @@ nav {
     box-shadow: rgba(24, 24, 24, 0.08) 0px 12px 24px -4px, rgba(24, 24, 24, 0.16) 0px 16px 32px -4px;
     top: 60.8px;
     left: 327.625px;
+    margin-top: 12px;
+}
+
+.dropdown-menu.ativo{
+    opacity: 1;
+    visibility: visible;
 }
 
 .dropdown-menu a{
@@ -134,11 +159,11 @@ nav {
     margin-right: 20px;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: flex; 
-}
 
 .produtos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-right: 8px;
 }
 .dropdown {
@@ -150,8 +175,8 @@ nav {
     position: absolute;
     height: 8px;
     width: 8px;
-    border-top: 2px solid black;
-    border-left: 2px solid black;
+    border-top: 2px solid #032d60;
+    border-left: 2px solid #032d60;
     transform: rotate(223deg) ;
 }
 
@@ -170,21 +195,92 @@ nav {
 }
 
 
-.popup {
-    position: absolute;
-}
 
 .icon-arraw-popup {
     position: absolute;
     height: 8px;
     width: 8px;
-    border-top: 2px solid white;
-    border-left: 2px solid white;
+    border-top: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
     transform: rotate(45deg) ;
     margin-top: 7px;
-    margin-left: 8px;
+    margin-left:20px;
     margin-right: 8px;
-    border: 1px solid rgba(24, 24, 24, 0.04);
-    box-shadow: rgba(24, 24, 24, 0.08) 0px 12px 24px -4px, rgba(24, 24, 24, 0.16) 0px 16px 32px -4px;
-
 }
+
+.nav-item {
+    margin-top: 12px;
+}
+
+
+.arrow-mobile {
+    display: none;
+    margin-bottom: 5px;
+}
+
+.icon-arraw-mobile {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-top: 2px solid #032d60;
+    border-left: 2px solid #032d60;
+    transform: rotate(223deg);
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+}
+
+.arrow-mobile button {
+    border: none;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 1280px) {
+    .navbar-nav {
+      display: none;
+    }
+
+    .button-watch-trial {
+        display: none;
+    }
+
+    .arrow-mobile {
+        display: block;
+    }
+
+    .img-sales-mobile {
+        display: flex;
+    }
+    
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+ 
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .button-watch-trial {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .button-watch-trial button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+  }
