@@ -65,7 +65,6 @@ nav {
 
 
 .watch-demos {
-    
     color: white;
     font-size: 16px;
     font-weight: 700;
@@ -114,32 +113,39 @@ nav {
     text-align: center;
     font-weight: bold;
     font-size: 24px;
-   color:  #032d60;
+    color:  #032d60;
 }
 
 .property-title:hover {
     color: #0176d3;
 }
 
+
 /*Menu clicavel*/
 .dropdown-menu{
     display: flex;
     position: absolute;
     background-color: white;
-    opacity: 0;
-    visibility: hidden;
-    width: 592px;
-    height: 247.200px;
+    width: 640px;
+    height: 295.200px;
     padding: 24px;
     box-sizing: border-box;
     border-radius: 16px;
     border: 1px solid rgba(24, 24, 24, 0.04);
-    box-shadow: rgba(24, 24, 24, 0.08) 0px 12px 24px -4px, rgba(24, 24, 24, 0.16) 0px 16px 32px -4px;
+    box-shadow: rgba(24, 24, 24, 0.08) 0px 12px 24px -4px;
     top: 60.8px;
-    left: 327.625px;
+    left: 230px;
     margin-top: 12px;
+    opacity: 0;
+    visibility: hidden;
+    top: 60px;
 }
 
+
+
+.dropdown-menu-mobile {
+    display: none;
+}
 .dropdown-menu.ativo{
     opacity: 1;
     visibility: visible;
@@ -148,14 +154,16 @@ nav {
 .dropdown-menu a{
     display: block;
     color: black;
+    font-size: 18px;
+    line-height: 28px;
 }
 
 .dropdown-left, .dropdown-right {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
+    justify-content: center;
     padding: 16px;
+    list-style: none;  
     margin-right: 20px;
 }
 
@@ -170,14 +178,20 @@ nav {
     cursor: pointer;
 }
 
+.icon button {
+    border: none;
+    background-color: transparent;
+}
 
 .icon-arraw {
+    display: block;
     position: absolute;
     height: 8px;
     width: 8px;
     border-top: 2px solid #032d60;
     border-left: 2px solid #032d60;
     transform: rotate(223deg) ;
+    cursor: pointer;
 }
 
 
@@ -187,15 +201,14 @@ nav {
     height: 9px;
     margin-left: 8px;
     margin-bottom: 3px;
+
 }
 
 .produtos:hover .icon-arraw {
-    border-top-color: #0176d3;
-    border-left-color: #0176d3;
+    border-color: #0176d3;
 }
 
-
-
+/*
 .icon-arraw-popup {
     position: absolute;
     height: 8px;
@@ -207,6 +220,40 @@ nav {
     margin-left:20px;
     margin-right: 8px;
 }
+*/
+.arrow-space
+{
+    position: absolute;
+    height: 12px;
+    width: 165.462;; 
+    top: 60px;
+    display: flex;
+    align-items: center;
+    display: none;
+}   
+
+.arrow-space.ativo {
+    display: block;
+}
+
+.arrow-space::after {
+    display: flex;
+    align-items: center;
+    content: '';
+    position: absolute;
+    top: 4;
+    left: calc(50% - calc((20 + 25px) / 2));
+    right: 50%;
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    transform: rotate(45deg);
+   
+    border: 2px solid rgba(24, 24, 24, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+    
+
 
 .nav-item {
     margin-top: 12px;
@@ -220,13 +267,15 @@ nav {
 
 .icon-arraw-mobile {
     position: absolute;
-    height: 8px;
-    width: 8px;
-    border-top: 2px solid #032d60;
-    border-left: 2px solid #032d60;
+    height: 10px;
+    width: 10px;
+    border-top: 3px solid #032d60;
+    border-left: 3px solid #032d60;
     transform: rotate(223deg);
     cursor: pointer;
+
 }
+
 
 .mobile-menu {
     display: none;
@@ -241,6 +290,10 @@ nav {
 .arrow-mobile button {
     border: none;
     background-color: transparent;
+}
+
+.title-navbar-nav {
+    padding: 8px 0 8px 0;
 }
 
 @media screen and (max-width: 1280px) {
@@ -263,13 +316,11 @@ nav {
     .mobile-menu ul{
         display: flex;
         flex-direction: column;
- 
-        padding-bottom: 1rem;
     }
 
     .mobile-menu .nav-item {
         display: block;
-        padding: 1rem 2rem;
+        padding: 0  0  0 1rem;
     }
 
     .mobile-menu .button-watch-trial {
@@ -283,4 +334,33 @@ nav {
     .open {
         display: block;
     }
-  }
+
+    .mobile-menu .navbar-nav {
+        overflow-y: auto; 
+        max-height: 300px;  
+    }
+
+    .dropdown-menu {
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    .dropdown-menu-mobile a {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+
+    .dropdown-left-right .nav-item {
+        margin: 12px 0 12px 0;
+        
+        
+    }
+
+    .dropdown-left-right {
+        list-style: none;   
+    }
+
+}

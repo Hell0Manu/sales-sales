@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,29 +24,30 @@
                 </div>
 
                 <ul class="navbar-nav">
-                    <li><a href="#">Visão geral</a></li>
+                    <li><a class="title-navbar-nav" href="#">Visão geral</a></li>
                     <li class="dropdown">
-                        <a class="produtos" href="#"> Produtos de vendas <div class="icon"><span class="icon-arraw"></span></div></a>
-                            <div class="popup"><span class="icon-arraw-popup"> </span></div>
+                        <a class="produtos" class="title-navbar-nav" href="#"> Produtos de vendas <div class="icon"><span class="icon-arraw"></span></div></a>
+                            <div class="arrow-space"></div>
+                        <!--<div class="popup"><span class="icon-arraw-popup"> </span></div>-->
 
                             <div class="dropdown-menu">
-                            <div class="dropdown-left">
-                                <a href="#">Sales Forces Automation</a>
-                                <a class= "nav-item" href="#">Sales Engagement</a>
-                                <a class= "nav-item" href="#">Sales Team Productivity</a>
-                                <a class= "nav-item" href="#">Enablement</a>
-                                <a class= "nav-item" href="#">IA de vendas</a>
-                            </div>
-                            <div class="dropdown-right">
-                                <a href="#">Sales Analytics</a>
-                                <a class= "nav-item" href="#">Partner Relationship Management</a>
-                                <a class= "nav-item" href="#">Revenue Optimization</a>
-                                <a class= "nav-item" href="#">Gestão de desempenho</a>
-                                <a class= "nav-item" href="#">Todos os produtos de vendas</a>
-                            </div>
+                            <ul class="dropdown-left">
+                               <li><a href="#">Sales Forces Automation</a></li>
+                               <li><a class= "nav-item" href="#">Sales Engagement</a></li>
+                               <li><a class= "nav-item" href="#">Sales Team Productivity</a></li>
+                               <li><a class= "nav-item" href="#">Enablement</a></li>
+                               <li><a class= "nav-item" href="#">IA de vendas</a></li>
+                            </ul>
+                            <ul class="dropdown-right">
+                                <li><a href="#">Sales Analytics</a></li>
+                                <li><a class= "nav-item" href="#">Partner Relationship Management</a></li>
+                                <li><a class= "nav-item" href="#">Revenue Optimization</a></li>
+                                <li><a class= "nav-item" href="#">Gestão de desempenho</a></li>
+                                <li><a class= "nav-item" href="#">Todos os produtos de vendas</a></li>
+                            </ul>
                         </div>
                     </li>
-                    <li><a href="#">Preços</a></li>
+                    <li><a class="title-navbar-nav" href="#">Preços</a></li>
                 </ul>
             </div>
             <div class="button-watch-trial">
@@ -55,35 +56,43 @@
                 </a>
             </div>
             <div class="arrow-mobile">
-                <button onclick="menuShow()"><span class="icon-arraw-mobile"> </span></button>
+                <button onclick="menuShow()"><span class="icon-arraw-mobile"></span></button>
             </div>
         </nav>
 
         <div class="mobile-menu">
-            <ul class="navbar-nav">
-               <li><a href="#">Visão geral</a></li>
-               <li class="dropdown">
-                   <a class="produtos" href="#"> Produtos de vendas <div class="icon"><span class="icon-arraw"></span></div></a>
-                       <div class="popup"><span class="icon-arraw-popup"> </span></div>
+           <ul class="navbar-nav">
+                <li><a class="title-navbar-nav" href="#">Visão geral</a></li>
+                <li class="dropdown">
 
-                       <div class="dropdown-menu">
-                       <div class="dropdown-left">
-                           <a href="#">Sales Forces Automation</a>
-                           <a class= "nav-item" href="#">Sales Engagement</a>
-                           <a class= "nav-item" href="#">Sales Team Productivity</a>
-                           <a class= "nav-item" href="#">Enablement</a>
-                           <a class= "nav-item" href="#">IA de vendas</a>
-                       </div>
-                       <div class="dropdown-right">
-                           <a href="#">Sales Analytics</a>
-                           <a class= "nav-item" href="#">Partner Relationship Management</a>
-                           <a class= "nav-item" href="#">Revenue Optimization</a>
-                           <a class= "nav-item" href="#">Gestão de desempenho</a>
-                           <a class= "nav-item" href="#">Todos os produtos de vendas</a>
-                       </div>
-                   </div>
-               </li>
-               <li><a href="#">Preços</a></li>
+                    <a class="produtos" class="title-navbar-nav" href="#"> Produtos de vendas 
+                        <div class="icon">  
+                            <button  onclick="toggleMobileDropdown()"> <span class="icon-arraw"></span></button>
+                        </div>
+                        
+                    </a>
+
+                    <div class="popup">
+                        <span class="icon-arraw-popup"></span>
+                    </div>
+
+                    <div class="dropdown-menu-mobile">
+                        <ul class="dropdown-left-right">
+                            <li><a class= "nav-item" href="#">Sales Forces Automation</a></li>
+                            <li></li><a class= "nav-item" href="#">Sales Engagement</a></li>
+                            <li><a class= "nav-item" href="#">Sales Team Productivity</a></li>
+                            <li><a class= "nav-item" href="#">Enablement</a></li>
+                            <li><a class= "nav-item" href="#">IA de vendas</a></li>
+                    
+                            <li> <a class= "nav-item" href="#">Sales Analytics</a></li>
+                            <li><a class= "nav-item" href="#">Partner Relationship Management</a></li>
+                            <li><a class= "nav-item" href="#">Revenue Optimization</a></li>
+                            <li><a class= "nav-item" href="#">Gestão de desempenho</a></li>
+                            <li> <a class= "nav-item" href="#">Todos os produtos de vendas</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="title-navbar-nav" href="#">Preços</a></li>
            </ul>
 
            <div class="button-watch-trial">
