@@ -26,16 +26,17 @@ function menuShow() {
 function toggleMobileDropdown() {
     let menuMobile = document.querySelector('.dropdown-menu-mobile');
     let iconMobile = document.querySelector('.icon button');
+    let iconstyle = document.querySelector('.icon-icon-arraw');
 
     if(menuMobile.classList.contains('open')) {
         menuMobile.classList.remove('open');
-        iconMobile.style.transform = 'rotate(0deg)';
+        iconstyle.style.transform = 'rotate(0deg)';
 
 
     }
     else {
         menuMobile.classList.add('open');
-        iconMobile.style.transform = 'rotate(180deg)';
+        iconstyle.style.transform = 'rotate(180deg)';
     }
 }
 

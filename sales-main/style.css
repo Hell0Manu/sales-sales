@@ -37,8 +37,9 @@ a:hover, .dropdown-menu a:hover {
 }
 
 
-.navbar-nav>li{
+.title-navbar-nav{
     font-weight: 600;
+    font-size: 16px;
 }
 
 .nav-sales {
@@ -138,7 +139,7 @@ a:hover, .dropdown-menu a:hover {
     background-color: white;
     width: 640px;
     height: 295.200px;
-    padding: 24px;
+    padding: 24px 40px 40px 40px;
     box-sizing: border-box;
     border-radius: 16px;
     border: 1px solid rgba(24, 24, 24, 0.04);
@@ -166,42 +167,52 @@ a:hover, .dropdown-menu a:hover {
     visibility: visible;
 }
 
-.dropdown-menu a{
+.dropdown-menu  a{
     display: block;
     color: black;
     font-size: 18px;
     line-height: 28px;
+    font-weight: 600;
+    color:#032d60;
 }
 
 .dropdown-left, .dropdown-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 16px;
     list-style: none;  
     margin-right: 20px;
+    width: 240px;
 }
 
 
-.produtos {
+
+.dropdown-right {
+    margin-top: 24px;
+    padding-right: 20px;
+}
+
+.title-navbar-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-right: 8px;
 }
 
-.nav-sales:hover .icon-arraw-mobile, .nav-sales:hover .property-title-mobile{
+.nav-sales:hover .icon-arraw-mobile, .nav-sales:hover .property-title-mobile, 
+.dropdown:hover .icon-arraw, .dropdown:hover .title-navbar-nav {
     color: #0176d3;
     border-color: #0176d3;
 }
 
-.dropdown, .property-logo, .logo{
+.dropdown, .property-logo, .logo {
     cursor: pointer;
 }
 
 .icon button {
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .icon-arraw {
@@ -217,15 +228,27 @@ a:hover, .dropdown-menu a:hover {
 
 
 .icon {
-    display: inline-flex;
-    width: 14px;
-    height: 9px;
+    
+    align-items: center;
     margin-left: 8px;
-    margin-bottom: 3px;
-
+    margin-bottom: 12px;
 }
 
-.produtos:hover .icon-arraw {
+.icon button {
+    border: none;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon-icon-arraw {
+    margin-bottom: 15px;
+    position: sticky;
+    width: 10px;
+    height: 10px;
+}
+
+.title-navbar-nav:hover .icon-arraw {
     border-color: #0176d3;
 }
 
@@ -312,11 +335,6 @@ a:hover, .dropdown-menu a:hover {
    
 }
 
-.title-navbar-nav {
-    padding: 8px 0 8px 0;
-}
-
-
 .button-watch-trial-mobile {
     
     padding: 24px 32px 12px 32px;
@@ -341,7 +359,7 @@ a:hover, .dropdown-menu a:hover {
     .navbar-nav {
         display: none;
         overflow-y:auto;
-        max-height: 400px;  /*mude aqui*/
+        height: auto;  /*mude aqui*/
         margin: 7.5px 0px 7.5 16px;
       }
   
@@ -355,12 +373,9 @@ a:hover, .dropdown-menu a:hover {
         align-items: center;
         justify-content: space-around;
         width: 100%;
-
-    
-      
     }
 
-    .img-sales-mobile {
+    .img-sales-mobil, .icon, .img-sales-mobile {
         display: flex;
     }
     
@@ -421,6 +436,11 @@ a:hover, .dropdown-menu a:hover {
         display: none;
         margin-bottom: 0px;
         width: 246px;
+    }
+
+    .icon {
+        margin-bottom: 0;
+        margin-left: 0;
     }
 }
 
