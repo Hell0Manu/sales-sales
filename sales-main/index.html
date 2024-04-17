@@ -1,114 +1,114 @@
 html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Software e soluções de vendas alimentadas por IA - Salesforce for Sales</title>
 </head>
+
 <body>
-    <header class="div-global-sales">
-        <nav class="nav-sales">
-            <div class="nav-container-sales">
+    <header class="header-container">
+        <nav class="nav-container">
+            <div class="nav-header">
 
-                <div class="nav-sales-header-logo">
-
-                  
-                    <span class="property-title">Vendas</span>
-                
+                <div class="nav-logo">
+                    <span class="title-logo">Vendas</span>
                 </div>
 
-                <ul class="navbar-nav">
-                    <li><a class="title-navbar-nav" href="#">Visão geral</a></li>
+                <ul class="nav-links">
+                    <li><a class="nav-links-title" href="#">Visão geral</a></li>
                     <li class="dropdown">
-                        <a class="title-navbar-nav" href="#"> Produtos de vendas <div class="icon"><span class="icon-arraw"></span></div></a>
-                            <div class="arrow-space"></div>
-
+                        <a class="nav-links-title" href="#"> Produtos de vendas <div class="icon"><span class="icon-arrow"></span></div></a>
+                        <div class="box-arrow-space"></div>
 
                         <div class="dropdown-menu">
                             <ul class="dropdown-left">
-                               <li><a  class= "nav-item-first" href="#">Sales Forces Automation</a></li>
-                               <li><a class= "nav-item" href="#">Sales Engagement</a></li>
-                               <li><a class= "nav-item" href="#">Sales Team Productivity</a></li>
-                               <li><a class= "nav-item" href="#">Enablement</a></li>
-                               <li><a class= "nav-item" href="#">IA de vendas</a></li>
+                                <li><a class="nav-item-first" href="#">Sales Forces Automation</a></li>
+                                <li><a class="nav-item" href="#">Sales Engagement</a></li>
+                                <li><a class="nav-item" href="#">Sales Team Productivity</a></li>
+                                <li><a class="nav-item" href="#">Enablement</a></li>
+                                <li><a class="nav-item" href="#">IA de vendas</a></li>
                             </ul>
                             <ul class="dropdown-right">
-                                <li><a  class= "nav-item-first"href="#">Sales Analytics</a></li>
-                                <li><a class= "nav-item" href="#">Partner Relationship Management</a></li>
-                                <li><a class= "nav-item" href="#">Revenue Optimization</a></li>
-                                <li><a class= "nav-item" href="#">Gestão de desempenho</a></li>
-                                <li><a class= "nav-item" href="#">Todos os produtos de vendas</a></li>
+                                <li><a class="nav-item-first" href="#">Sales Analytics</a></li>
+                                <li><a class="nav-item" href="#">Partner Relationship Management</a></li>
+                                <li><a class="nav-item" href="#">Revenue Optimization</a></li>
+                                <li><a class="nav-item" href="#">Gestão de desempenho</a></li>
+                                <li><a class="nav-item" href="#">Todos os produtos de vendas</a></li>
                             </ul>
                         </div>
+
                     </li>
-                    <li><a class="title-navbar-nav" href="#">Preços</a></li>
+                    <li><a class="nav-links-title" href="#">Preços</a></li>
                 </ul>
+
             </div>
-            <div class="button-watch-trial">
-                <a class="link-trial" href="#"  aria-label="Assista às demos: Sales Cloud">
-                    <button class="watch-demos">Assista ás demos</button>
+
+            <div class="div-button-watch">
+                <a class="link-button-watch" href="#" aria-label="Assista às demos: Sales Cloud">
+                    <button class="btn-watch">Assista ás demos</button>
                 </a>
             </div>
+            
             <div class="arrow-mobile">
                 <button onclick="menuShow()">
-                        <div class="logo">
-                            <div class="img-sales-mobile">
-                                <img class="property-logo" src="https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-no-type-logo.svg" alt="Salesforce Logo">
-                            </div>
-                            <span class="property-title-mobile">Vendas</span>
+                    <div class="logo">
+                        <div class="img-mobile">
+                            <img class="property-logo"
+                                src="https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-no-type-logo.svg" alt="Salesforce Logo">
                         </div>
-                        <span class="icon-arraw-mobile"></span>
+                        <span class="title-logo-mobile">Vendas</span>
+                    </div>
+                    <span class="icon-arrow-mobile"></span>
                 </button>
             </div>
         </nav>
 
-        
+
         <div class="mobile-menu">
             <div class="nav-mobile">
-                <ul class="navbar-nav">
-                    <li><a class="title-navbar-nav" href="#">Visão geral</a></li>
+                <ul class="nav-links">
+                    <li><a class="nav-links-title" href="#">Visão geral</a></li>
                     <li class="dropdown">
 
-            
-                             <div class="icon">
-                                <button  onclick="toggleMobileDropdown()">
-                                    <a class="title-navbar-nav" href="#"> Produtos de vendas </a>
-                                    <div class="icon-icon-arraw"><span class="icon-arraw"></span></div>
-                                </button>
-                            </div>
-                                
-                    
+                        <div class="icon">
+                            <button onclick="toggleMobileDropdown()">
+                                <a class="nav-links-title" href="#"> Produtos de vendas </a>
+                                <div class="div-icon-arrow"><span class="icon-arrow"></span></div>
+                            </button>
+                        </div>
 
-                            <div class="popup">
-                                <span class="icon-arraw-popup"></span>
-                            </div>
+                        <div class="popup">
+                            <span class="icon-arrow-popup"></span>
+                        </div>
 
-                            <div class="dropdown-menu-mobile">
-                                <ul class="dropdown-left-right">
-                                    <li><a class= "nav-item" href="#">Sales Forces Automation</a></li>
-                                    <li><a class= "nav-item" href="#">Sales Engagement</a></li>
-                                    <li><a class= "nav-item" href="#">Sales Team Productivity</a></li>
-                                    <li><a class= "nav-item" href="#">Enablement</a></li>
-                                    <li><a class= "nav-item" href="#">IA de vendas</a></li>
-                            
-                                    <li> <a class= "nav-item" href="#">Sales Analytics</a></li>
-                                    <li><a class= "nav-item" href="#">Partner Relationship Management</a></li>
-                                    <li><a class= "nav-item" href="#">Revenue Optimization</a></li>
-                                    <li><a class= "nav-item" href="#">Gestão de desempenho</a></li>
-                                    <li> <a class= "nav-item" href="#">Todos os produtos de vendas</a></li>
-                                </ul>
-                         </div>
-                     </li>
-                    <li><a class="title-navbar-nav" href="#">Preços</a></li>
+                        <div class="dropdown-menu-mobile">
+                            <ul class="dropdown-left-right">
+                                <li><a class="nav-item" href="#">Sales Forces Automation</a></li>
+                                <li><a class="nav-item" href="#">Sales Engagement</a></li>
+                                <li><a class="nav-item" href="#">Sales Team Productivity</a></li>
+                                <li><a class="nav-item" href="#">Enablement</a></li>
+                                <li><a class="nav-item" href="#">IA de vendas</a></li>
+                                <li> <a class="nav-item" href="#">Sales Analytics</a></li>
+                                <li><a class="nav-item" href="#">Partner Relationship Management</a></li>
+                                <li><a class="nav-item" href="#">Revenue Optimization</a></li>
+                                <li><a class="nav-item" href="#">Gestão de desempenho</a></li>
+                                <li> <a class="nav-item" href="#">Todos os produtos de vendas</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="nav-links-title" href="#">Preços</a></li>
                 </ul>
             </div>
 
-                <div class="button-watch-trial-mobile">
-                    <a class="link-trial" href="#"  aria-label="Assista às demos: Sales Cloud">
-                        <button class="watch-demos">Assista ás demos</button>
-                    </a>
-                </div>
+            <div class="div-button-watch-mobile">
+                <a class="link-button-watch" href="#" aria-label="Assista às demos: Sales Cloud">
+                    <button class="btn-watch">Assista ás demos</button>
+                </a>
+            </div>
+
         </div>
     </header>
     <script src="script.js"></script>

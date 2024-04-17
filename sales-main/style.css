@@ -1,3 +1,4 @@
+/* Reset de estilos Globais */
 *{
     padding: 0;
     margin: 0;
@@ -5,16 +6,19 @@
     line-height: 1.5;
     font-family:  'Salesforce Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';   
 }
-body{
-    background-color: red;
-}
 
+/* Estilos Links */
 a {
     text-decoration: none;
     color: #032d60; 
 }
 
-.div-global-sales {
+a:hover, .dropdown-menu a:hover {
+    color: #0176d3;
+}
+
+/* Estilos cbeçalho */
+.header-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,52 +30,12 @@ a {
     align-items: center;
     min-width: 60px;
     min-height: 51px;
+    border-top: 1px solid rgd(229, 229, 299);
+    box-shadow: rgba(24, 24, 24, 0.08) 0px 0px 2px, rgba(24, 24, 24, 0.16) 0px 2px 4px 1px;
 }
 
-a:hover, .dropdown-menu a:hover {
-    color: #0176d3;
-}
-
-.watch-demos a:hover, .free-trial a:hover {
-    color: white;
-}
-
-
-.title-navbar-nav{
-    font-weight: 600;
-    font-size: 16px;
-}
-
-.nav-sales {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
-    justify-content: space-between;
-    height: 72px;
-}  
-
-
-
-
-.navbar-nav{
-    display: flex;
-    list-style: none;    
-    margin: 0px 24px 0 24px;
-}
-
- .navbar-nav>li {
-    padding: 12px 16px 12px 16px;
-}
-
-.mobile-menu .navar-nav{
-    position: absolute;
-    width: 163px;
-}
-
-
-.watch-demos {
+/* Estilo botoes*/
+.btn-watch {
     color: white;
     font-size: 16px;
     font-weight: 700;
@@ -83,54 +47,94 @@ a:hover, .dropdown-menu a:hover {
     white-space: nowrap;
 }
 
-.watch-demos:hover {
+.btn-watch:hover {
     background-color: #023248;
     border: solid #023248;
 }
 
-.nav-container-sales, .nav-sales {
+.btn-watch a:hover, .free-trial a:hover {
+    color: white;
+}
+
+.nav-links-title{
+    font-weight: 600;
+    font-size: 16px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin-right: 8px;
 }
 
-.div-global-sales {
-    border-top: 1px solid rgd(229, 229, 299);
-    box-shadow: rgba(24, 24, 24, 0.08) 0px 0px 2px, rgba(24, 24, 24, 0.16) 0px 2px 4px 1px;
+.nav-links-title:hover .icon-arrow {
+    border-color: #0176d3;
 }
 
-.nav-sales-header-logo{
+.nav-links{
+    display: flex;
+    list-style: none;    
+    margin: 0px 24px 0 24px;
+}
+
+.nav-links>li {
+    padding: 12px 16px 12px 16px;
+}
+
+.mobile-menu .navar-nav{
+    position: absolute;
+    width: 163px;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+}
+
+.nav-logo{
     display: flex;
     align-items: center;
     width: auto;
-
     height: 32px;
     margin-bottom: 3px;
 }
 
-.img-sales-mobile {
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: space-between;
+    height: 72px;
+}  
+
+.nav-header {
+    display: flex;
+    align-items: center;
+}
+
+.img-mobile {
     display: none;
     width: 45px;
     height: 31.3px;
     padding-right: 16px;
 }
 
-
-
-.property-title, .property-title-mobile {
+.title-logo, .title-logo-mobile {
     text-align: center;
     font-weight: bold;
     font-size: 24px;
     color:  #032d60;
 }
 
-.property-title:hover {
+.title-logo:hover {
     cursor: pointer;
     color: #0176d3;
 }
-
-
-
-
 
 /*Menu clicavel*/
 .dropdown-menu{
@@ -150,16 +154,6 @@ a:hover, .dropdown-menu a:hover {
     opacity: 0;
     visibility: hidden;
     top: 60px;
-}
-
-
-
-.dropdown-menu-mobile {
-    display: none;
-}
-
-.nav-item:focus, .nav-item-first:focus {
-    background-color: #d8edff;
 }
 
 .dropdown-menu.ativo{
@@ -185,37 +179,50 @@ a:hover, .dropdown-menu a:hover {
     width: 240px;
 }
 
-
-
 .dropdown-right {
     margin-top: 24px;
     padding-right: 20px;
 }
 
-.title-navbar-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 8px;
-}
-
-.nav-sales:hover .icon-arraw-mobile, .nav-sales:hover .property-title-mobile, 
-.dropdown:hover .icon-arraw, .dropdown:hover .title-navbar-nav {
-    color: #0176d3;
-    border-color: #0176d3;
+.dropdown-menu-mobile {
+    display: none;
 }
 
 .dropdown, .property-logo, .logo {
     cursor: pointer;
 }
 
+.nav-item:focus, .nav-item-first:focus {
+    background-color: #d8edff;
+}
+
+.nav-item {
+    margin-top: 12px;
+}
+
+.nav-container:hover .icon-arrow-mobile, .nav-container:hover .title-logo-mobile, 
+.dropdown:hover .icon-arrow, .dropdown:hover .nav-links-title {
+    color: #0176d3;
+    border-color: #0176d3;
+}
+
+.icon {
+    align-items: center;
+    margin-left: 8px;
+    margin-bottom: 12px;
+}
+
 .icon button {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
 
-.icon-arraw {
+.icon-arrow {
     display: block;
     position: absolute;
     height: 8px;
@@ -226,76 +233,14 @@ a:hover, .dropdown-menu a:hover {
     cursor: pointer;
 }
 
-
-.icon {
-    
-    align-items: center;
-    margin-left: 8px;
-    margin-bottom: 12px;
-}
-
-.icon button {
-    border: none;
-    width: 98%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.icon-icon-arraw {
+.div-icon-arrow {
     margin-bottom: 15px;
     position: sticky;
     width: 10px;
     height: 10px;
 }
 
-.title-navbar-nav:hover .icon-arraw {
-    border-color: #0176d3;
-}
-
-.arrow-space
-{
-    position: absolute;
-    height: 12px;
-    width: 165.462;; 
-    top: 60px;
-    display: flex;
-    align-items: center;
-    display: none;
-}   
-
-.arrow-space.ativo {
-    display: block;
-}
-
-.arrow-space::after {
-    display: flex;
-    align-items: center;
-    content: '';
-    position: absolute;
-    top: 4;
-    left: calc(50% - calc((20 + 25px) / 2));
-    right: 50%;
-    width: 12px;
-    height: 12px;
-    background: transparent;
-    transform: rotate(45deg);
-    border: 2px solid rgba(24, 24, 24, 0.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
-}
-    
-
-
-.nav-item {
-    margin-top: 12px;
-}
-
-
-.arrow-mobile {
-    display: none;
-    margin-bottom: 5px;
-}
-
-.icon-arraw-mobile {
+.icon-arrow-mobile {
     display: block;
     align-items: center;
     position: absolute;
@@ -308,15 +253,40 @@ a:hover, .dropdown-menu a:hover {
 
 }
 
-.mobile-menu {
-    display: none;
+.box-arrow-space
+{
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    /*max-height: 398px;*/
-    background-color: white;
-    z-index: 999;
+    height: 12px;
+    width: 165.462;; 
+    top: 60px;
+    display: flex;
+    align-items: center;
+    display: none;
+}   
+
+.box-arrow-space.ativo {
+    display: block;
+}
+
+.box-arrow-space::after {
+    display: flex;
+    align-items: center;
+    content: '';
+    position: absolute;
+    top: 4;
+    left: calc(50% - calc((20 + 25px) / 2));
+    right: 50%;
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    transform: rotate(45deg);
+    border: 2px solid rgba(24, 24, 24, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+    
+.arrow-mobile {
+    display: none;
+    margin-bottom: 5px;
 }
 
 .arrow-mobile button {
@@ -335,13 +305,7 @@ a:hover, .dropdown-menu a:hover {
    
 }
 
-.button-watch-trial-mobile {
-    
-    padding: 24px 32px 12px 32px;
-}
-
-
-.button-watch-trial-mobile {
+.div-button-watch-mobile {
     position: sticky; 
     bottom: 0; 
     background-color: white; 
@@ -349,22 +313,25 @@ a:hover, .dropdown-menu a:hover {
     padding: 24px 24px 32px 24px;
 }
 
-
-.button-watch-trial-mobile .watch-demos
+.div-button-watch-mobile .btn-watch
 {
     width: 100%;
 }
 
+
+body {
+    background-color: red;
+}
 @media screen and (max-width: 1280px) {
-    .navbar-nav {
+    .nav-links  {
         display: none;
         overflow-y:auto;
-        height: auto;  /*mude aqui*/
+        max-height: 494.375px;
         margin: 7.5px 0px 7.5 16px;
-      }
-  
+    }
 
-    .button-watch-trial {
+    .div-button-watch 
+    {
         display: none;
     }
 
@@ -375,7 +342,7 @@ a:hover, .dropdown-menu a:hover {
         width: 100%;
     }
 
-    .img-sales-mobil, .icon, .img-sales-mobile {
+    .img-sales-mobil, .icon, .img-mobile {
         display: flex;
     }
     
@@ -389,12 +356,12 @@ a:hover, .dropdown-menu a:hover {
         padding: 0  0  0 1rem;
     }
 
-    .mobile-menu .button-watch-trial {
+    .mobile-menu .div-button-watch {
         display: block;
         padding: 1.5rem 2rem 1rem 2rem ;
     }
 
-    .mobile-menu .button-watch-trial button {
+    .mobile-menu .div-button-watch button {
         width: 100%;
     }
     .open {
@@ -420,19 +387,19 @@ a:hover, .dropdown-menu a:hover {
         list-style: none;   
     }
 
-    .div-global-sales, .nav-sales {
+    .header-container, .nav-container {
         height: 56px;
     }
 
-    .property-title-mobile {
+    .title-logo-mobile {
         font-size: 16px;
     }
 
-    .watch-demos {
+    .btn-watch {
         padding: 12px 24px;
     }
 
-    .nav-sales-header-logo {
+    .nav-logo {
         display: none;
         margin-bottom: 0px;
         width: 246px;
@@ -445,7 +412,7 @@ a:hover, .dropdown-menu a:hover {
 }
 
 @media screen and (max-height: 380px){
-    .navbar-nav {
+    .nav-links {
         overflow-y:hidden;
       }
 
