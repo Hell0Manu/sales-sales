@@ -7,10 +7,9 @@ dropdown.onclick = () => {
     arrow.classList.toggle('ativo');
 }
 
-/* Abre o mobile-menu e rotacio o arraw correspondente */
 function menuShow() {
     let menuMobile = document.querySelector('.mobile-menu');
-    let iconMobile = document.querySelector('.icon-arraw-mobile')
+    let iconMobile = document.querySelector('.icon-arrow-mobile')
 
     if(menuMobile.classList.contains('open')) {
         menuMobile.classList.remove('open');
@@ -23,10 +22,9 @@ function menuShow() {
     }
 }
 
-/* Abre a sessão "Produtos de Vendas" e rotaciona o arrow dessa sessão */ 
 function toggleMobileDropdown() {
     let menuMobile = document.querySelector('.dropdown-menu-mobile');
-    let iconstyle = document.querySelector('.icon-icon-arraw');
+    let iconstyle = document.querySelector('.div-icon-arrow');
 
     if(menuMobile.classList.contains('open')) {
         menuMobile.classList.remove('open');
@@ -37,5 +35,3 @@ function toggleMobileDropdown() {
         iconstyle.style.transform = 'rotate(180deg)';
     }
 }
-
-

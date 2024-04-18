@@ -306,7 +306,7 @@ a:hover, .dropdown-menu a:hover {
 }
 
 .div-button-watch-mobile {
-    position: sticky; 
+    position: sticky;
     bottom: 0; 
     background-color: white; 
     z-index: 1000;
@@ -318,16 +318,16 @@ a:hover, .dropdown-menu a:hover {
     width: 100%;
 }
 
-
 body {
     background-color: red;
 }
+
 @media screen and (max-width: 1280px) {
-    .nav-links  {
+     .nav-links  {
         display: none;
         overflow-y:auto;
-        max-height: 494.375px;
-        margin: 7.5px 0px 7.5 16px;
+        max-height: calc(94vh - 200px);
+        margin: 7.5px 0px 7.5px 16px;
     }
 
     .div-button-watch 
@@ -408,16 +408,5 @@ body {
     .icon {
         margin-bottom: 0;
         margin-left: 0;
-    }
-}
-
-@media screen and (max-height: 380px){
-    .nav-links {
-        overflow-y:hidden;
-      }
-
-    .nav-mobile {
-        overflow-y:auto;
-        max-height: 100px;  
     }
 }
