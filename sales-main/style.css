@@ -263,7 +263,6 @@ a:hover, .dropdown-menu a:hover {
 
 .box-arrow-space::after {
     top: 4px;
-    right: 50%;
     width: 12px;
     height: 12px;
     content: '';
@@ -272,7 +271,7 @@ a:hover, .dropdown-menu a:hover {
     align-items: center;
     background: transparent;
     transform: rotate(45deg);
-    left: calc(50% - calc((20 + 25px) / 2));
+    left: 65.912px;
     border: 2px solid rgba(24, 24, 24, 0.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
