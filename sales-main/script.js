@@ -35,3 +35,16 @@ function toggleMobileDropdown() {
         iconstyle.style.transform = 'rotate(180deg)';
     }
 }
+
+
+window.addEventListener('scroll', function(event) {
+
+    let imgDesktop = document.querySelector('.img-desktop');
+    let scrollTop =  document.documentElement.scrollTop;
+    
+    imgDesktop.style.display = "block";
+
+    if(scrollTop === 0) {
+        imgDesktop.style.display = "none";
+    }
+});
