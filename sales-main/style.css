@@ -115,18 +115,24 @@ a:hover, .dropdown-menu a:hover {
 
 .img-mobile {
     width: 45px;
-    display: none;
     height: 31.3px;
     padding-right: 16px;
 }
 
-/*Adicionar animação*/
 .nav-logo .img-desktop {
-   /* transition: max-width 0.25s ease-in-out 0s, padding-right 0.25s ease-in-out 0s;*/
     width: 45px;
-    display: none;
     height: 31.3px;
     padding-right: 16px;
+}
+
+.img-desktop img {
+    opacity: 1;
+    transition: opacity 0.35s ease-in-out 0s;
+}
+
+
+.img-desktop {
+    transition: max-width 0.25s ease-in-out 0s, padding-right 0.25s ease-in-out 0s;
 }
 
 
@@ -354,7 +360,7 @@ main {
         justify-content: space-around;
     }
 
-    .img-sales-mobil, .icon, .img-mobile {
+    .img-sales-mobile, .icon, .img-mobile {
         display: flex;
     }
     
@@ -420,5 +426,21 @@ main {
     .icon {
         margin-bottom: 0;
         margin-left: 0;
+    }
+
+    .img-mobile {
+        max-width: 0;
+        padding-right: 0;
+        transition: max-width 0.25s ease-in-out 0s, padding-right 0.25s ease-in-out 0s;
+    }
+
+   .img-mobile img {
+        opacity: 0;
+        transition: opacity 0.35s ease-in-out 0s;
+    }
+
+    .imgStyle {
+        max-width: 45px;
+        padding-right: 16px;
     }
 }

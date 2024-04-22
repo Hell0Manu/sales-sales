@@ -38,13 +38,25 @@ function toggleMobileDropdown() {
 
 
 window.addEventListener('scroll', function(event) {
-
-    let imgDesktop = document.querySelector('.img-desktop');
-    let scrollTop =  document.documentElement.scrollTop;
+    let imgDesktop = document.querySelector('.img-desktop img');
+    let imgMobile = document.querySelector('.img-mobile');
+    let imgImgMobile = document.querySelector('.img-mobile img');
+    let imgImgDesktop = document.querySelector('.img-desktop img');
+    let scrollTop = document.documentElement.scrollTop;
     
-    imgDesktop.style.display = "block";
+    if (scrollTop === 0) {
+        imgMobile.classList.remove('imgStyle');
+        imgImgMobile.style.opacity = '0';
+        
+        imgDesktop.classList.remove('imgStyle');
+        imgImgDesktop.style.opacity = '0'; 
+    } else {
+        imgMobile.classList.add('imgStyle');
+        imgImgMobile.style.opacity = '1';
 
-    if(scrollTop === 0) {
-        imgDesktop.style.display = "none";
+        imgDesktop.classList.add('imgStyle');
+        imgImgDesktop.style.opacity = '1'; 
     }
 });
+
+
